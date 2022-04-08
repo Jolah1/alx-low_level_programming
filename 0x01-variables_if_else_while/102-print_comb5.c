@@ -18,7 +18,7 @@ putchar(' ');
 putchar(j / 10 + '0');								putchar(j % 10 + '0');
 if (i == 98)
 {
-if ( j == 99)
+if (j == 99)
 {
 putchar(',');
 putchar(' ');
