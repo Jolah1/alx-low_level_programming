@@ -3,30 +3,32 @@
 
 /**
  * main - entry point
- * Return: always return 0
+ * but for multiples of three prints fizz
+ * and for the multiples of five prints buzz
+ * Return: always return 0 (success)
  */
 int main(void)
 {
-	int i = 1;
+	int i;
 
-	for (1 = 1; i <= 100; i++)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
-		{
-		if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
 		{
 			printf("Fizz");
-		}
-		if (i % 5 == 0)
+		} else if (i % 5 == 0 && i % 3 !=0)
 		{
 			printf("Buzz");
-		}
+		} else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf("FizzBuzz");
+		} else if (i == 1)
+		{
+			printf("%d", i);
 		} else
 		{
 			printf("%d", i);
 		}
-		if (i != 100)
-			printf(' ');
 	}
 	printf("\n");
 	return (0);
