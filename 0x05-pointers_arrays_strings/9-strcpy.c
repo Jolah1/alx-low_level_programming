@@ -1,5 +1,6 @@
 #include "main.h"
 #include <string.h>
+
 /**
  * _strcpy - entry point
  * @dest: first variable
@@ -12,7 +13,7 @@ char *_strcpy(char *dest, char *src)
 	int i, len;
 
 	len = strlen(src);
-	for (i = 0; i < len; i++)
+	for (i = 0; i <= len; i++)
 	{
 		dest[i] = src[i];
 	}
