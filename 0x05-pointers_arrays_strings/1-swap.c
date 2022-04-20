@@ -2,9 +2,9 @@
 
 /**
  * swap_int - entry point
- * @a: pointer 1
- * @b: pointer 2
- * Return: always return 0
+ * @a: First variable
+ * @b: Second variable
+ * Return: always return 0
  */
 
 void swap_int(int *a, int *b)
