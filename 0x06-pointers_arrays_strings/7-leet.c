@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * leet - encodes a string
- * @str: input string
- * Return: always return 0
+ * leet - Entry Point
+ * @str: Variable
+ * Return: Always 0
  */
 
 char *leet(char *str)
@@ -13,7 +13,7 @@ char *leet(char *str)
 	char b[] = "AEOTL";
 	char c[] = "43071";
 
-	for (i =0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
 		for (x = 0; x < 5; x++)
 		{
