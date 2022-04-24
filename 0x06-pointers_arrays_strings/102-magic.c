@@ -9,7 +9,7 @@ int main(void)
   a[2] = 1024;
   p = &n;
   /*
-   * write your line of code here.....
+   * write your line of code here...
    * Remember:
    * - you are not allowed to use a
    * - you are not allowed to modify p
@@ -17,7 +17,7 @@ int main(void)
    * - you are not allowed to write more than this line of code
    */
  p[5] = 98;
-  /* .....so that it prints 98\n */
+  /* ...so that it prints 98\n */
   printf("a[2] = %d\n", a[2]);
   return (0);
 }
