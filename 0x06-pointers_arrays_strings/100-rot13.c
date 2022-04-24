@@ -1,12 +1,11 @@
 #include "main.h"
-
 /**
  * rot13 - encodes a string
  * @s: input variables
- * Return: alwyas return dest
+ * Return: always return dest
  */
 
-char *rot13*char *s)
+char *rot13(char *s)
 {
 	int count = 0, x;
 	char alphabet[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,11 +13,11 @@ char *rot13*char *s)
 
 	while (*(s + count) != '\0')
 	{
-		for (i = 0; i < 52; i++)
+		for (x = 0; x < 52; x++)
 		{
-			if (*(s + count) == alphabet[i])
+			if (*(s + count) == alphabet[x])
 			{
-				*(s + count) = rot13[i];
+				*(s + count) = rot13[x];
 				break;
 			}
 		}
