@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
  * _strstr - returns pointer to first char of matching substring
@@ -10,16 +9,28 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int a
+	int i, b;
 
-	while (*haystack != '\0')
+	if (needle[0] == '\0')
 	{
-		a = 0;
-		while (*haystack == *needle && *haystack != '\0' && *needle != '\0')
-			haystack++, needle++, a++;
-		if (*needle == '\0')
-			return (haystack - a);
-		haystack -= (a - 1), needle -= a;
+		return (haystack);
+	}
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		if (haystack[i] == needle[0])
+		{
+			for (b = 0; needle[b] != '\0'; b++)
+			{
+				if (haystack[i + b] != needle[b])
+				{
+					break;
+				}
+			}
+			if (needle[b] == '\0')
+			{
+				return (haystack + i);
+			}
+		}
 	}
 	return ('\0');
 }
