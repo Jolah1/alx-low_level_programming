@@ -7,6 +7,7 @@
  * @size: size of square
  * Return: always return 0
  */
+
 void print_diagsums(int *a, int size)
 {
 	int x, y, sum1, sum2;
