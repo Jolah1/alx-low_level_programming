@@ -3,10 +3,11 @@
 
 /**
  * string_nconcat - concatenates two strings.
- * @s1: first string
- * @s2: second string
- * @n: number of bytes
- * Return: pointer to the memory
+ * @s1: first string.
+ * @s2: second string.
+ * @n: amount of bytes.
+ * Return: pointer to the allocated memory.
+ * if malloc fails, status value is equal to 98.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
@@ -27,7 +28,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 
 	if (n > ls2)
-		n = 1s2;
+		n = ls2;
 
 	lsout = ls1 + n;
 	sout = malloc(lsout + 1);
@@ -41,7 +42,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			sout[i] = s1[i];
 		else
 			sout[i] = s2[i - ls1];
-
 	sout[i] = '\0';
 
 	return (sout);
