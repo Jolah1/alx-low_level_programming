@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - entry point
+ * main - prints file name
+ *
  * Return: always return 0
  */
 int main(void)
