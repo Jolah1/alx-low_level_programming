@@ -4,7 +4,7 @@
  * int_index - searches for an integer
  * @array: input integer array
  * @size: size of the array
- * @mcp: pointer to the function
+ * @cmp: pointer to the function
  *
  * Return: index of the first element of the functions
  */
