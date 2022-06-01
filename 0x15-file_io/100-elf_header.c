@@ -241,6 +241,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 /**
  * close_elf - Closes an ELF file.
  * @elf: The file descriptor of the ELF file.
+ * Description: if the file cannot be closed exit 98.
  */
 void close_elf(int elf)
 {
