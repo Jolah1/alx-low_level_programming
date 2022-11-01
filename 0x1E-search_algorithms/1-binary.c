@@ -24,7 +24,7 @@ int recursive_search(int *array, size_t size, int value)
 	printf("\n");
 
 	if (half && size % 2 == 0)
-		half --;
+		half--;
 
 	if (value == array[half])
 		return ((int)half);
@@ -53,7 +53,7 @@ int binary_search(int *array, size_t size, int value)
 
 	if (index >= 0 && array[index] != value)
 		return (-1);
-	
+
 	return (index);
 }
 
