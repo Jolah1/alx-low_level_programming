@@ -1,5 +1,5 @@
-#include "search_algos.h"
 #include <math.h>
+#include "search_algos.h"
 
 /**
  * jump_list - searches for a value in an array of
